@@ -5,8 +5,8 @@ Please note this repository is deprecated, and the code is not up-to-date to use
 This repository will not be further maintained. Please find another repository if you want to deploy a single channel gateway.
 
 
-Single Channel LoRaWAN Gateway
-==============================
+Single Channel LoRaWAN Gateway for Raspnerry Pi Zero w
+======================================================
 This repository contains a proof-of-concept implementation of a single
 channel LoRaWAN gateway.
 
