@@ -71,17 +71,17 @@ int RST   = 0;
 sf_t sf = SF7;
 
 // Set center frequency
-uint32_t  freq = 868100000; // in Mhz! (868.1)
+uint32_t  freq = 923200000; // in Mhz! (923.2)
 
 // Set location
-float lat=0.0;
-float lon=0.0;
-int   alt=0;
+float lat=13.8131851;
+float lon=100.5136994;
+int   alt=10;
 
 /* Informal status fields */
 static char platform[24]    = "Single Channel Gateway";  /* platform definition */
 static char email[40]       = "";                        /* used for contact email */
-static char description[64] = "";                        /* used for free form description */
+static char description[64] = "Raspberry Zero W";                        /* used for free form description */
 
 // define servers
 // TODO: use host names and dns
@@ -556,7 +556,7 @@ int main () {
     si_other.sin_port = htons(PORT);
 
     ifr.ifr_addr.sa_family = AF_INET;
-    strncpy(ifr.ifr_name, "eth0", IFNAMSIZ-1);  // can we rely on eth0?
+    strncpy(ifr.ifr_name, "wlan0", IFNAMSIZ-1);  // can we rely on eth0?
     ioctl(s, SIOCGIFHWADDR, &ifr);
 
     /* display result */
